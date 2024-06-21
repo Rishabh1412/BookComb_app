@@ -1,0 +1,113 @@
+[
+    {
+        "id":1,
+        "name": "Fantasy Book",
+        "title":"linyfukgijg gg ukguykhi uyjgkugjmg gumgug ugujg ug",
+        "price":0,
+        "category":"Paid",
+        "image":"https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg"
+    },
+        {
+        "id":2,
+        "name": "Manga Book",
+        "title":"linyfukgijg gg ukguykhi uyjgkugjmg gumgug ugujg ug",
+        "price":0,
+        "category":"Free",
+        "image":"https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg"
+    },
+        {
+        "id":3,
+        "name": "Comedy Book",
+        "title":"linyfukgijg gg ukguykhi uyjgkugjmg gumgug ugujg ug",
+        "price":0,
+        "category":"Free",
+        "image":"https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg"
+    },
+        {
+        "id":4,
+        "name": "Shadow Book",
+        "title":"linyfukgijg gg ukguykhi uyjgkugjmg gumgug ugujg ug",
+        "price":0,
+        "category":"Free",
+        "image":"https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg"
+    },
+        {
+        "id":5,
+        "name": "Ditective Book",
+        "title":"linyfukgijg gg ukguykhi uyjgkugjmg gumgug ugujg ug",
+        "price":0,
+        "category":"Free",
+        "image":"https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg"
+    },
+        {
+        "id":6,
+        "name": "Romance Book",
+        "title":"linyfukgijg gg ukguykhi uyjgkugjmg gumgug ugujg ug",
+        "price":0,
+        "category":"Free",
+        "image":"https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg"
+    },
+        {
+        "id":7,
+        "name": "Fairytales Book",
+        "title":"linyfukgijg gg ukguykhi uyjgkugjmg gumgug ugujg ug",
+        "price":0,
+        "category":"Free",
+        "image":"https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg"
+    },
+        {
+        "id":8,
+        "name": "Horror Book",
+        "title":"linyfukgijg gg ukguykhi uyjgkugjmg gumgug ugujg ug",
+        "price":0,
+        "category":"Free",
+        "image":"https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg"
+    },
+        {
+        "id":9,
+        "name": "Fiction Book",
+        "title":"linyfukgijg gg ukguykhi uyjgkugjmg gumgug ugujg ug",
+        "price":0,
+        "category":"Free",
+        "image":"https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg"
+    },
+        {
+        "id":10,
+        "name": "Scifi Book",
+        "title":"linyfukgijg gg ukguykhi uyjgkugjmg gumgug ugujg ug",
+        "price":0,
+        "category":"Free",
+        "image":"https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg"
+    },
+        {
+        "id":11,
+        "name": "Jungle Book",
+        "title":"linyfukgijg gg ukguykhi uyjgkugjmg gumgug ugujg ug",
+        "price":0,
+        "category":"Free",
+        "image":"https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg"
+    },
+        {
+        "id":12,
+        "name": "Comic Book",
+        "title":"linyfukgijg gg ukguykhi uyjgkugjmg gumgug ugujg ug",
+        "price":0,
+        "category":"Free",
+        "image":"https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg"
+    },
+        {
+        "id":13,
+        "name": "Story Book",
+        "title":"linyfukgijg gg ukguykhi uyjgkugjmg gumgug ugujg ug",
+        "price":0,
+        "category":"Paid",
+        "image":"https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg"
+    },    {
+        "id":14,
+        "name": "Story Book",
+        "title":"linyfukgijg gg ukguykhi uyjgkugjmg gumgug ugujg ug",
+        "price":0,
+        "category":"Paid",
+        "image":"https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg"
+    }
+]
