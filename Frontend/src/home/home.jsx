@@ -9,7 +9,7 @@ function home() {
     <>
     <Navbar/>
     <Banner/>
-    <Freebook/>
+    {/* <Freebook/> */}
     <Footer/>
     
     </>
