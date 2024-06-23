@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import Login from './login'
+
 import { useForm } from "react-hook-form"
 
 
@@ -44,9 +44,7 @@ function signup() {
             </div>
             <div className='flex justify-around mt-4'>
                 <button className='bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200'>Signup</button>
-                <p>Have account?     <a onClick={()=>document.getElementById("my_modal_3").showModal()} className="bg-black text-blue-500 px-3 py-2 rounded-md hover:bg-slate-800  duration-300 cursor-pointer">Login</a>
-    <Login/>
-                                                    </p>
+                <p>Have account? <Link to={"/login"}><span className='underline text-blue-500 cursor-pointer'>Login</span></Link></p>
             </div>
             </form>
 

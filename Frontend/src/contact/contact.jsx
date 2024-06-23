@@ -51,8 +51,9 @@ function contact() {
                 <textarea 
                 // type='textarea' 
                 // placeholder='Your message'  
+                placeholder='Message....'
                 className=' w-80 h-20 px-3 py-1 border-none rounded-md outline-none'
-                {...register("password", { required: true })} >Message....</textarea><br/>
+                {...register("password", { required: true })} ></textarea><br/>
                 {errors.password && <span className='text-sm text-red-500'>This field is required</span>}
             </div>
             <div className=' left-0 ml-5 justify-around mt-4'>

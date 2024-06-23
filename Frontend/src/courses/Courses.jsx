@@ -7,7 +7,7 @@ function Courses() {
   return (
 
     <>
-    <Navbar/>
+    <Navbar />
     <div className='min-h-screen'>
         <Course/>
     </div>
