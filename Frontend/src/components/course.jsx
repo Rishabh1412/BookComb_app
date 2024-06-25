@@ -5,6 +5,7 @@ import axios from 'axios';
 
 const API_KEY = 'AIzaSyDJQvDPNn29swXc2q96tJE--PxrT_DlN44';
 
+
 function Course() {
   const [books, setBooks] = useState([]);
   const location = useLocation();
@@ -31,15 +32,13 @@ function Course() {
 
   return (
     <div className="max-w-screen-2xl container mx-auto md:px-24 px-4">
-      <div className="mt-28 items-center justify-center text-center">
-        <h1 className="text-2xl md:text-4xl ">
-          Weeeee, happy to see you here <span className="text-pink-500">BookBee! :)</span>
+      <div className="pt-28 items-center justify-center text-center">
+        <h1 className="text-2xl md:text-4xl text-white ">
+          We are happy to see you here, <span className="text-yellow-400">BookBee!</span>
         </h1>
-        <p className="mt-12">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae expedita asperiores inventore assumenda laborum illum sapiente velit maxime, unde co
-        </p>
+       
         <Link to="/">
-          <button className="bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-700 duration-300 mt-6">
+          <button className="bg-yellow-500 text-black px-4 py-2 rounded-md hover:bg-yellow-700 duration-300 mt-6">
             Back
           </button>
         </Link>

@@ -29,16 +29,16 @@ function Navbar() {
 
   const navItems = (
     <>
-      <li><a href="/">Home</a></li>
-      <li><a href="/course">Books</a></li>
-      <li><a href="/contact">Contact</a></li>
-      <li><a href="/about">About</a></li>
+      <li><a href="/" className='text-white hover:bg-yellow-400 hover:text-black'>Home</a></li>
+      <li><a href="/course" className='text-white hover:bg-yellow-400 hover:text-black'>Books</a></li>
+      <li><a href="/contact" className='text-white hover:bg-yellow-400 hover:text-black'>Contact</a></li>
+      <li><a href="/about" className='text-white hover:bg-yellow-400 hover:text-black'>About</a></li>
     </>
   );
 
   return (
     <>
-      <div className={`max-w-screen-2xl container mx-auto md:px-20 px-4 fixed top-0 left-0 right-0 z-50 ${sticky ? 'sticky-navbar shadow-md bg-base-200 duration-300 transition-all ease-in-out' : ''}`}>
+      <div className={`max-w-screen-2xl container mx-auto md:px-20 px-4 fixed top-0 left-0 right-0 z-50 ${sticky ? 'sticky-navbar shadow-md backdrop-blur duration-300 transition-all ease-in-out' : ''}`}>
         <div className="navbar">
           <div className="navbar-start">
             <div className="dropdown">
@@ -49,7 +49,7 @@ function Navbar() {
                 {navItems}
               </ul>
             </div>
-            <a className="text-2xl font-bold">BookComb</a>
+            <a className="text-2xl font-bold text-yellow-300">BookComb</a>
           </div>
           <div className="navbar-end space-x-3">
             <div className="navbar-center hidden lg:flex">
@@ -61,19 +61,17 @@ function Navbar() {
               <form onSubmit={handleSearch} className="flex items-center gap-2">
                 <input
                   type="text"
-                  className="grow border rounded-md px-3 py-2"
-                  placeholder="Search"
+                  className="grow border rounded-md border-none bg-neutral-800 px-3 py-2"
+                  placeholder="Book name....."
                   value={inputValue}
                   onChange={(e) => setInputValue(e.target.value)}
                 />
-                <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-700 duration-300">
+                <button type="submit" className=" bg-transparent text-yellow-300 border border-yellow-300 px-4 py-2 rounded-md hover:bg-yellow-400 hover:text-black duration-300">
                   Search
                 </button>
               </form>
             </div>
-            <Link to='/login'>
-            <button className="bg-black text-white px-3 py-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer">Login</button>
-            </Link>
+
           </div>
         </div>
       </div>

@@ -17,13 +17,13 @@ function contact() {
   return (
     <>
     <Navbar/>
-    <div className=" bg-base-300 flex h-screen items-center justify-center shadow-lg ">
+    <div className=" bg-black flex h-screen items-center justify-center shadow-lg ">
          <div className="modal-box w-96">
             <form method="dialog" onSubmit={handleSubmit(onSubmit)}>
             {/* if there is a button in form, it will close the modal */}
             {/* <Link to="/"><button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button></Link> */}
             
-            <h3 className="font-bold text-lg">Contact Us</h3>
+            <h3 className="font-bold text-lg text-white">Contact Us</h3>
             <div className='mt-4 space-y-2'>
                 <span>Name</span>
                 <br/>
@@ -57,7 +57,7 @@ function contact() {
                 {errors.password && <span className='text-sm text-red-500'>This field is required</span>}
             </div>
             <div className=' left-0 ml-5 justify-around mt-4'>
-                <button className='bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200'>Login</button>
+                <button className='bg-yellow-500 text-black rounded-md px-3 py-1 hover:bg-yellow-700 duration-200'> Send </button>
                 {/* <p>Not registered? <Link to={"/signup"}><span className='underline text-blue-500 cursor-pointer'>SignUp</span></Link></p> */}
             </div>
             </form>
