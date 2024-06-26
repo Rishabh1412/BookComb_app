@@ -49,7 +49,7 @@ function Course() {
             <Cards key={book.id} item={book} />
           ))
         ) : (
-          <p>No books found</p>
+          <p className='text-gray-400'>No books found</p>
         )}
       </div>
     </div>
