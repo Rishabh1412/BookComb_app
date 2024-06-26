@@ -1,11 +1,23 @@
 .loader {
-  border: 16px solid #f3f3f3; /* Light grey */
-  border-top: 16px solid #3498db; /* Blue */
+  border: 7px solid #f3f3f3; /* Light grey */
+  border-top: 7px solid #ebef0e; /* Blue */
   border-radius: 50%;
-  width: 120px;
-  height: 120px;
+  width: 12vh;
+  height: 12vh;
   animation: spin 2s linear infinite;
+  transform: translate(-50%,-50%);
+
 }
+.main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-5%,-5%);
+
+    
+}
+
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
