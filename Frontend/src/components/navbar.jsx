@@ -54,8 +54,10 @@ function Navbar() {
           </div>
           <div className="navbar-end space-x-3">
             <div className="navbar-center hidden lg:flex">
-              <ul className="menu menu-horizontal px-1">
-                {navItems}
+              <ul className="menu menu-horizontal px-1 bg-neutral-700">
+                <li><a href="/">Home</a></li>
+                <li><a href="/course">Books</a></li>
+                <li><a href="/about">About</a></li>
               </ul>
             </div>
             <div className="hidden md:block">
