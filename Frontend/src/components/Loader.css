@@ -2,8 +2,8 @@
   border: 7px solid #f3f3f3; /* Light grey */
   border-top: 7px solid #ebef0e; /* Blue */
   border-radius: 50%;
-  width: 12vh;
-  height: 12vh;
+  width: 7vh;
+  height: 7vh;
   animation: spin 2s linear infinite;
   transform: translate(-50%,-50%);
 
@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translate(-5%,-5%);
+    transform: translate(-2%,-2%);
 
     
 }
