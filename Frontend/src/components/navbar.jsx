@@ -31,14 +31,13 @@ function Navbar() {
     <>
       <li><a href="/" className='text-white hover:bg-yellow-400 hover:text-black'>Home</a></li>
       <li><a href="/course" className='text-white hover:bg-yellow-400 hover:text-black'>Books</a></li>
-      <li><a href="/contact" className='text-white hover:bg-yellow-400 hover:text-black'>Contact</a></li>
       <li><a href="/about" className='text-white hover:bg-yellow-400 hover:text-black'>About</a></li>
     </>
   );
 
   return (
     <>
-      <div className={`max-w-screen-2xl container mx-auto md:px-20 px-4 fixed top-0 left-0 right-0 z-50 ${sticky ? 'sticky-navbar shadow-md backdrop-blur duration-300 transition-all ease-in-out' : ''}`}>
+      <div className={`max-w-screen-2xl container mx-auto md:px-20 px-4 fixed top-0 left-0 right-0 z-50 ${sticky ? 'sticky-navbar shadow-md bg-neutral-900 duration-300 transition-all ease-in-out' : ''}`}>
         <div className="navbar">
           <div className="navbar-start">
             <div className="dropdown">
@@ -61,12 +60,12 @@ function Navbar() {
               <form onSubmit={handleSearch} className="flex items-center gap-2">
                 <input
                   type="text"
-                  className="grow border rounded-md border-none bg-neutral-800 px-3 py-2"
+                  className="grow border rounded-md border-none bg-neutral-800 px-3 py-2 text-sm"
                   placeholder="Book name....."
                   value={inputValue}
                   onChange={(e) => setInputValue(e.target.value)}
                 />
-                <button type="submit" className=" bg-transparent text-yellow-300 border border-yellow-300 px-4 py-2 rounded-md hover:bg-yellow-400 hover:text-black duration-300">
+                <button type="submit" className=" bg-transparent text-yellow-300 border text-sm border-yellow-300 px-4 py-2 rounded-md hover:bg-yellow-400 hover:text-black duration-300">
                   Search
                 </button>
               </form>

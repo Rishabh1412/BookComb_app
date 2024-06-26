@@ -6,7 +6,6 @@ function Footer() {
         <footer className="footer footer-center p-10 text-base-content rounded bg-neutral-950">
             <nav className="grid grid-flow-col gap-4">
                 <a href='/about' className="link link-hover">About us</a>
-                <a href='/contact' className="link link-hover">Contact</a>
                
             </nav> 
             <nav>
@@ -15,7 +14,7 @@ function Footer() {
                 </div>
             </nav> 
             <aside>
-                <p>Copyright © 2024 - All right reserved by BookComb Ltd</p>
+                <p>#BookComb</p>
             </aside>
         </footer>
     </>
