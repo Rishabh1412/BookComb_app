@@ -11,7 +11,7 @@ function Cards({ item }) {
 
   return (
     
-    <div className="p-2 px-4 m-4 bg-neutral-900 text-white rounded-lg shadow-md pb-12 hover:bg-yellow-400 hover:text-black hover:scale-105 duration-300">
+    <div className="p-2 px-4 md:m-4 mx-1 my-2 bg-neutral-900 text-white rounded-lg shadow-md pb-12 hover:bg-yellow-400 hover:text-black hover:scale-105 duration-300">
       <Link to={`/book/${id}`}>
         <img 
           className="w-full h-64 object-cover rounded border border-black"

@@ -10,7 +10,7 @@ function Course() {
   const [books, setBooks] = useState([]);
   const location = useLocation();
 
-  const query = new URLSearchParams(location.search).get('query') || 'manga'; // Default to 'manga' if no query is provided
+  const query = new URLSearchParams(location.search).get('query') || 'stories'; // Default to 'manga' if no query is provided
 
   useEffect(() => {
     const getBooks = async () => {
