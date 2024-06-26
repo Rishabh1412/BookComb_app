@@ -40,16 +40,16 @@ function Navbar() {
                 <li><a href="/" >Home</a></li>
                 <li><a href="/course">Books</a></li>
                 <li><a href="/about">About</a></li>
-                <li className="mt-3 w-screen px-3" >
-                  <form onSubmit={handleSearch} className="flex items-center gap-2">
+                <li className="mt-3 max-w-screen px-3" >
+                  <form onSubmit={handleSearch} className="flex items-center gap-2 max-w-screen">
                     <input
                       type="text"
-                      className="grow border rounded-md border-none bg-neutral-800 px-3 py-2 text-sm"
+                      className="grow border rounded-md border-none bg-neutral-800 px-3 py-2 text-sm w-2/3"
                       placeholder="Book name....."
                       value={inputValue}
                       onChange={(e) => setInputValue(e.target.value)}
                     />
-                    <button type="submit" className=" bg-transparent text-yellow-300 border text-sm border-yellow-300 px-4 py-2 rounded-md hover:bg-yellow-400 hover:text-black duration-300">
+                    <button type="submit" className=" bg-transparent w-1/3 text-yellow-300 border text-sm border-yellow-300 px-4 py-2 rounded-md hover:bg-yellow-400 hover:text-black duration-300">
                       Search
                     </button>
                   </form>
