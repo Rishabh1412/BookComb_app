@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 const apiKey = "AIzaSyDJQvDPNn29swXc2q96tJE--PxrT_DlN44";
 
 function Description() {
   const { id } = useParams();
+  const navigate = useNavigate();
   const [book, setBook] = useState(null);
 
   useEffect(() => {
@@ -25,16 +26,18 @@ function Description() {
 
   if (!book) return <div className='h-screen w-screen flex justify-center items-center text-xl'>Loading...</div>;
 
-  const { volumeInfo, saleInfo } = book;
+  const { volumeInfo, saleInfo, accessInfo } = book;
   const { listPrice, retailPrice, buyLink } = saleInfo || {};
-  const downloadLink = book.accessInfo?.pdf?.acsTokenLink;
-
+  const downloadLink = accessInfo?.pdf?.acsTokenLink;
 
   return (
     <div className='bg-black min-h-screen p-8'>
       <div className="max-w-screen-lg mx-auto bg-neutral-900 text-white p-6 rounded-lg shadow-md">
         <div className="flex flex-col md:flex-row">
-          <div className="md:w-1/3">
+          <div className="md:w-1/3 relative">
+            <button onClick={() => navigate(-1)} className='absolute top-2 left-2 bg-yellow-300 rounded-lg font-normal text-black p-3 shadow-md shadow-black'>
+              Back
+            </button>
             <img
               className="w-full h-auto object-cover rounded-lg shadow-xl"
               src={volumeInfo.imageLinks?.thumbnail}
@@ -66,14 +69,16 @@ function Description() {
             )}
             {retailPrice && (
               <p className="text-white mb-2">
-                <strong>Rs.</strong> {saleInfo.retailPrice.amount}
+                <strong>Retail Price:</strong> {retailPrice.amount} {retailPrice.currencyCode}
               </p>
             )}
-            {buyLink && (
+            {buyLink ? (
               <a href={buyLink} target="_blank" rel="noopener noreferrer" className="btn mr-4 bg-green-500 text-black hover:bg-green-800">
                 Buy
               </a>
-            ) || (<p>Not Available to buy</p>)}
+            ) : (
+              <p>Not Available to buy</p>
+            )}
             {downloadLink && (
               <a href={downloadLink} target="_blank" rel="noopener noreferrer" className="btn bg-transparent text-green-400 border border-green-400 hover:bg-green-300 hover:text-black duration-200">
                 Download
