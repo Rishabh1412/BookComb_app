@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import Loader from './loader'
 
 const apiKey = "AIzaSyDJQvDPNn29swXc2q96tJE--PxrT_DlN44";
 
@@ -24,7 +25,7 @@ function Description() {
     fetchBook();
   }, [id]);
 
-  if (!book) return <div className='h-screen w-screen flex justify-center items-center text-xl'>Loading...</div>;
+  if (!book) return <Loader/>;
 
   const { volumeInfo, saleInfo, accessInfo } = book;
   const { listPrice, retailPrice, buyLink } = saleInfo || {};
